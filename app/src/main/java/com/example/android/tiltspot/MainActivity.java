@@ -203,6 +203,8 @@ public class MainActivity extends AppCompatActivity
         mTextSensorRoll.setText(getResources().getString(
                 R.string.value_format, roll));
 
+        // Create File to record the sensor value
+
         File file = new File(MainActivity.this.getFilesDir(), "sensor_log");
         if (!file.exists()) {
             file.mkdir();
